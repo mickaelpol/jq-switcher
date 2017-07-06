@@ -1,3 +1,5 @@
+// début de l'exercice 
+
 var species = {
 	cat    : "cat.jpg",
 	bear   : "bear.jpg",
