@@ -1,12 +1,34 @@
 // début de l'exercice 
+ var species = {
+ 	cat: "cat.jpg",
+ 	bear: "bear.jpg",
+ 	fish: "fish.jpg"
+ };
 
-var species = {
-	cat    : "cat.jpg",
-	bear   : "bear.jpg",
-	fish   : "fish.jpg"
-};
+ function main (){
+ 	$('button').click(function (){
+ 		var attr = $(this).data('animal');
+ 		console.log(attr);
+ 		var path = species [attr];
+ 		$('#holder').html("<img src='img/" + path + "'alt='' />");
+ 	})
+ }
 
-function main(){
+// var species = {
+// 	cat    : "cat.jpg",
+// 	bear   : "bear.jpg",
+// 	fish   : "fish.jpg"
+// };
+
+// function main(){
+// 	$('button').click(function(){ //écoute quand on clique sur le bouton 
+// 		var attr = $(this).data('animal'); //déclare la data animal en variable 
+// 		console.log(attr); //affiche dans la console la valeur dans laquelle on a cliquer ;
+// 		var path = species [attr];
+// 		$('#holder').html("<img src='img/" + path + "'alt='' />");
+
+// 	});
+
 	/* 
 	tout votre code doit se trouver dans cette fonction,
 	vous pouvez biensur créer d'autres fonctions si nécessaire
@@ -22,7 +44,7 @@ function main(){
 	
 	
 	 
-}
+// }
 
 $(document).ready(function(){
 	main();
